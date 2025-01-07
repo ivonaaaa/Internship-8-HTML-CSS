@@ -53,26 +53,27 @@ a {
 }
 
 img {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     margin-bottom: 15px;
 }
 
-.firstParagraph, .secondParagraph, .thirdParagraph {
+.textBox {
     background-color: antiquewhite;
     border: 10px solid;
     padding: 10px;
     margin: 10px auto 10px;
 }
 
-.firstParagraph {
+#firstParagraph {
     border-color:fuchsia;
 }
 
-.secondParagraph {
+#secondParagraph {
     border-color:aqua;
 }
 
-.thirdParagraph {
+#thirdParagraph {
     border-color:orange;
 }
 
@@ -92,11 +93,18 @@ footer p {
     font-size: 15px;
 }
 
-.name a {
+#name a {
     color:aqua;
 }
 
-footer marquee p {
-    margin-bottom: 0px;
-    font-size: 12px;
+@media (max-width: 400px) {
+    img {
+        width: 80%;
+    }
+    p {
+        font-size: 15px;
+    }
+    .doctypeText {
+        font-size: 13px;
+    }
 }
